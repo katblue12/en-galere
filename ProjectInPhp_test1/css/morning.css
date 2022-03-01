@@ -1,0 +1,82 @@
+/*-----------------------------------------------------------------------------------------
+                                    FONT IMPORTS
+-----------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+
+
+/*-----------------------------------------------------------------------------------------
+                                     VARIABLES
+-------------------------------------------------------------------------------------------*/                                     
+:root {
+
+    /*BOXES*/
+    --radius:20%;
+    --enter_shadow: -1px 5px 15px 2px rgb(65, 63, 63);
+
+    /*COLOURS*/
+    --yellow:rgb(221, 165, 9);
+    --blue:rgb(19, 134, 201);
+
+    /*FONTS*/
+    --title-font:'Michroma', sans-serif;
+    --text-font:'Roboto', sans-serif;
+    --banner-font:'Erica One', cursive;
+
+    /*BANNER*/
+    --banner-height:55vh;
+    --banner-font-size:6rem;
+    --banner-rad:40px;
+    
+}
+
+ /*--------------------------------------------------------------------------------------------------------
+                                BANNER
+---------------------------------------------------------------------------------------------------------- */
+    .banner_hangover{
+        font-family: var(--banner-font);
+        font-size: 2.5em;
+        font-style:bold;
+        color: var(--blue);
+        text-align: center;
+        animation: banner_hangover 3.5s;
+        animation-timing-function: ease step-start;
+        animation-iteration-count: infinite;
+        animation-fill-mode: backwards;
+    }
+
+
+     /*--------------------------------------------------------------------------------------------------------
+                                THE MORNING AFTER
+---------------------------------------------------------------------------------------------------------- */
+
+.hangover>article {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    padding: 3rem;
+}
+.hangover>article>img {
+    height: 20vh;
+    width: 20vw;
+    margin: 2rem;
+}
+.hangover>article>button{
+    height: 8vh;
+    width: 30vh;
+    border-radius: var(--banner-rad);
+    background-color: var(--yellow);
+    margin-left: 15vw;
+}
+
+.hangover>container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+

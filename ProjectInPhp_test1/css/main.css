@@ -1,0 +1,343 @@
+/*-----------------------------------------------------------------------------------------
+                                    FONT IMPORTS
+-----------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+
+
+/*-----------------------------------------------------------------------------------------
+                                     VARIABLES
+-------------------------------------------------------------------------------------------*/       
+
+:root{
+
+    /*BOXES*/
+    --header-shadow: -1px 5px 15px 2px rgb(65, 63, 63);
+
+    /*COLOURS*/
+    --yellow:rgb(221, 165, 9);
+    --green:rgb(72, 129, 11);
+    --blue:rgb(19, 134, 201);
+    --purple:rgb(76, 6, 185);
+    --bgcolor:rgb(255,255,255);
+    --new-darkturquoise: #3F869E;
+    --charcoal:#626060;
+
+    /*nav colours*/
+    --yellow:rgb(221, 165, 9);
+    --green:rgb(72, 129, 11);
+    --blue:rgb(19, 134, 201);
+    --purple:rgb(76, 6, 185);
+    --newpink: rgb(170, 35, 84);
+    --bgcolor:rgb(240, 248, 248);
+
+    /*FONTS*/
+    --title-font:'Michroma', sans-serif;
+    --text-font:'Roboto', sans-serif;
+  
+
+
+    /*li/a*/
+    --font-size-li:1rem;
+    --font-weight-li: 550;
+
+   /*FORMS*/
+   --form-text-size:1.2rem;
+   --form-input-width:25rem;
+   --form-input-height:2rem;
+   --placeholder-font-size:60vh;
+   --placeholder-text-position:center;
+   --legend-font-size:3rem;
+   --input-border-radius:1vh;
+   --forms-bgcolor: rgb(255, 255, 255);
+
+    /*Headings*/
+    --h1-font-size:2rem;
+    --h2-font-size:2rem;
+}
+
+/*-----------------------------------------------------------------------------------------
+                                       HEAD
+------------------------------------------------------------------------------------------*/
+
+html {
+    background-color: var(--bgcolor);
+   
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*--------------------------------------------------------------------------------------------------
+                 HEADER 
+---------------------------------------------------------------------------------------------------*/   
+
+header {
+    background-color: black;
+    height: 15vh;
+    width: 99vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 6vh;
+    border-top-right-radius: 40px;  
+    margin-bottom: 5vh;
+    box-shadow:var(--header-shadow);
+}
+
+@media only screen and (max-width: 1850px){
+    header {
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align:center;
+        margin-bottom: 3vh;
+    }
+}
+
+header>container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width:100vw;
+    padding: 3vw;
+}
+
+@media only screen and (max-width: 1850px){
+    header>container {
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align:center;
+        margin-bottom: 3vh;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------
+                                 NAVBAR
+---------------------------------------------------------------------------------------------------*/   
+
+header>container>img:nth-child(1){
+border-radius: 20px;
+/* margin-right: 10vw; */
+height: 6vh;
+}
+
+
+
+
+li,a {
+    padding: 1.0625rem;
+    list-style: none;
+    display: inline;
+    font-size: var(--font-size-li);
+    font-family: var(--title-font);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:nth-of-type(1) {
+    color: var(--blue);
+}
+
+a:nth-of-type(2) {
+    color: var(--green);
+}
+
+a:nth-of-type(3) {
+    color: red;
+}
+
+a:nth-of-type(4) {
+    color: var(--newpink);
+}
+
+a:nth-of-type(5) {
+    color: var(--yellow);
+}
+
+a:nth-of-type(6) {
+    color: var(--purple);
+}
+
+a:nth-of-type(7) {
+    color: var(--bgcolor);
+}
+li:hover {
+    color:var(--yellow);
+}
+
+
+/*----------------------------------------------------------
+                                 BANNER   
+------------------------------------------------------------*/
+/* section:nth-of-type(1)>div:nth-child(1) {
+    background-color: black;
+    height: 6vh;
+    box-shadow:var(--header-shadow);
+    
+} */
+
+/*--------------------------------------------------------------------------------------------------
+                                 HEADINGS and TEXT
+---------------------------------------------------------------------------------------------------*/  
+
+h1 {
+    font-family: var(--title-font);
+    font-size: var(--h1-font-size);
+    text-align: center;
+    color: var(--new-darkturquoise);
+}
+
+
+
+h2 {
+    font-family: var(--title-font);
+    font-size: var(--h2-font-size);
+    text-align: center;
+    color:var(--green);
+
+}
+
+
+p {
+    font-family: var(--text-font);
+    color:var(--purple);
+    font-size: var(--text-font);
+    text-align: justify;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------
+                              FORMS LOGIN ACCOUNT
+--------------------------------------------------------------------------------------------------------*/
+/* form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+} */
+
+/*div*/
+.choose_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+    margin-top: 0vh;
+    width: 100vw;
+}
+
+input {
+    width: var(--form-input-width);
+    height: var(--form-input-height);
+    background-color: rgba(160, 152, 152, 0.3);
+    font-family:var(--text-font);
+    color: var(--charcoal);
+    font-size: var(--form-text-size);
+    text-align: center; 
+    outline: none;
+    border:none;
+    box-shadow: -5px 6px 8px 1px rgb(138, 133, 133, 0.9);
+}
+
+
+
+label {
+    font-family: var(--title-font);
+    color: var(--new-darkturquoise);
+    font-size: var(--form-text-size);
+    margin-top: 2rem;
+    font-weight: 600;
+    }
+
+legend {
+    font-family: var(--title-font);
+    color: var(--green);
+    font-size: var(--legend-font-size);
+    margin: 2rem;
+    font-weight: var(--font-weight-li);
+    justify-content: center;
+    }
+
+    @media only screen and (max-width: 1000px){
+        legend{
+            text-align: center;
+        }
+    }
+
+    
+select{
+    width: 30vw;
+    height: 10vh;
+    font-family: var(--text-font);
+    color: var(--blue);
+    font-size: var(--form-text-size);
+    border-radius: var(--banner-rad);
+    background-color: var(--yellow);
+}
+
+
+option {
+    text-align: center;
+     
+}
+    
+::placeholder {
+    font-size: var(--placeholder-font-size);
+    font-family: var(--text-font);
+    /* color: var(--green); */
+    text-align: var(--placeholder-text-position);
+}
+
+.form_button_send {
+        background-color: transparent;
+        border: none;
+        color: var(--new-darkturquoise);
+        margin-top: 3.125rem;
+        font-size: var(--form-text-size);
+        font-weight: 650;
+        font-family: var(--title-font);
+       
+    }
+option[value]{
+    border-radius: 20%;
+    background-color: var(--blue);
+    color: var(--bgcolor);
+}
+
+
+    
+.form_button_send:hover {
+        color: var(--blue);
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+
+/*--------------------------------------------------------------------------------------------------
+                                            FOOTER
+----------------------------------------------------------------------------------------------------*/ 
+footer { 
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    background-color: black;
+    width: 99vw;
+    border-bottom-right-radius: var(--banner-rad);
+    box-shadow: var(--header-shadow);
+    border-bottom-right-radius: 40px;
+    
+
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+
+/*-----------------------------------------------------------------------------------------
+                                     VARIABLES
+-------------------------------------------------------------------------------------------*/                                     
+html {
+
+    /*BOXES*/
+    --input-shadow:  -5px 6px 8px 1px rgb(138, 133, 133, 0.9);
+
+    /*COLOURS*/
+    --charcoal:rgb(52, 52, 52);
+    --new-darkturquoise: rgb(63, 134, 158);
+    --inputBg:rgba(160, 152, 152, 0.3);
+
+    /*FONTS*/
+    --title-font:'Michroma', sans-serif;
+    --text-font:'Roboto', sans-serif;
+
+    /*FORMS*/
+    --form-text-size:3vh;
+    --form-input-width:25rem;
+    --form-input-height:2rem;
+    --text-position:center;
+    --forms-bgcolor: rgb(255, 255, 255);
+    --input-border-radius:3vh;
+
+
+    /*li/a*/
+    --font-size-li:1.3rem;
+    --font-weight-li: 550;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    height: 53vh;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+    input {
+        width: var(--form-input-width);
+        height: var(--form-input-height);
+        background-color: rgba(160, 152, 152, 0.3);
+        font-family:var(--text-font);
+        color: var(--charcoal);
+        font-size: var(--form-text-size);
+        text-align: center; 
+        outline: none;
+        border: none;
+        box-shadow: -5px 6px 8px 1px rgb(138, 133, 133, 0.9);
+        border-radius: var(--input-border-radius);
+        margin-top: 5vh;
+    
+}
+
+label {
+    font-family: var(--title-font);
+    color: var(--new-darkturquoise);
+    font-size: var(--form-text-size);
+    margin-top: 2rem;
+    font-weight: 600;
+    }
+
+div{
+    display: flex;
+    height: auto;
+    width: var(--form-input-width);
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+}
+
+
+    

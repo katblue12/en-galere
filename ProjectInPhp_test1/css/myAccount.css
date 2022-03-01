@@ -1,0 +1,163 @@
+/*-----------------------------------------------------------------------------------------
+                                    FONT IMPORTS
+-----------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+
+/*-----------------------------------------------------------------------------------------
+                                     VARIABLES
+-------------------------------------------------------------------------------------------*/                                   
+:root {
+
+    /*BOXES*/
+    --radius:20px;
+    --enter_shadow: -1px 5px 15px 2px rgb(65, 63, 63);
+
+    /*COLOURS*/
+    --yellow:rgb(221, 165, 9);
+    --green:rgb(72, 129, 11);
+    --blue:rgb(19, 134, 201);
+    --purple:rgb(76, 6, 185);
+    --pink:rgb(139, 12, 54);
+    --orange:rgb(82, 75, 75);
+    --red:#D81159;
+    --charcoal:rgb(52, 52, 52);
+    --bgcolor:rgb(255, 255, 255);
+    --measure:red;
+
+
+    --new-orange:#D7680F; 
+    --new-lightgreen:#ADCA7F;
+    --new-turquoise:#1B7D73; 
+    --new-darkturquoise: #3F869E;
+    --new:#2B2D42;
+
+
+
+    /*FONTS*/
+    --title-font:'Michroma', sans-serif;
+    --text-font:'Roboto', sans-serif;
+
+    
+    /*FORMS*/
+    --form-text-size:2rem;
+    --form-input-width:25rem;
+    --form-input-height:2rem;
+    --placeholder-font-size:60vh;
+    --placeholder-text-position:center;
+    --legend-font-size:3rem;
+    --input-border-radius:3vh;
+    --forms-bgcolor: rgb(255, 255, 255);
+
+
+}
+
+
+/*-------------------------------------------------------------------------------------------------------
+                   POSITION OF FORM
+--------------------------------------------------------------------------------------------------------*/   
+section{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-evenly;
+}  
+
+@media only screen and (max-width: 1000px){
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+div:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+}
+
+div:nth-of-type(1)>label{
+    text-align: left;
+}
+
+div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------
+                   FORMS login/createacc/
+--------------------------------------------------------------------------------------------------------*/           
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input {
+    width: var(--form-input-width);
+    height: var(--form-input-height);
+    background-color: rgba(160, 152, 152, 0.3);
+    font-family:var(--text-font);
+    color: var(--charcoal);
+    font-size: var(--form-text-size);
+    text-align: center; 
+    outline: none;
+    border: none;
+    box-shadow: -5px 6px 8px 1px rgb(138, 133, 133, 0.9);
+    border-radius: var(--input-border-radius);
+}
+
+
+
+label {
+    font-family: var(--title-font);
+    color: var(--new-darkturquoise);
+    font-size: var(--form-text-size);
+    margin-top: 2rem;
+    font-weight: 600;
+    text-align: left;
+    }
+
+    @media only screen and (max-width: 1000px){
+        label{
+            text-align: center;
+        }
+    }
+
+
+    
+::placeholder {
+    font-size: var(--placeholder-font-size);
+    font-family: var(--text-font);
+    color: var(--green);
+    text-align: var(--placeholder-text-position);
+}
+
+.form_button_send {
+        background-color: transparent;
+        border: none;
+        color: var(--new-darkturquoise);
+        margin-top: 3.125rem;
+        font-size: var(--form-text-size);
+        font-weight: 650;
+        font-family: var(--title-font);
+       
+    }
+
+.form_button_send:hover {
+        color: var(--blue);
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+
+

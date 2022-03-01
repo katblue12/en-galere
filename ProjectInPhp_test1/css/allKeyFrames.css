@@ -1,0 +1,111 @@
+/*--------------------------------------------------------------------------------------------------
+                                            BANNER ANIMATIONS
+----------------------------------------------------------------------------------------------------*/
+
+
+:root {
+
+    /*BOXES*/
+    --enter_shadow: -1px 5px 15px 2px rgb(8, 8, 8);
+
+    /*COLOURS*/
+    --yellow:rgb(221, 165, 9);
+    --green:rgb(72, 129, 11);
+    --blue:rgb(19, 134, 201);
+    --purple:rgb(76, 6, 185);
+    --newpink: rgb(216,17,89);
+    --bgcolor:rgb(240, 248, 248);   
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------
+        ENTER ANIMATIONS
+---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@keyframes first {
+0% {
+    transform: rotate(-180deg);
+    background-color: var(--bgcolor);
+}
+
+100% {
+    transform: rotate(-360deg);
+    background-color: var(--yellow);
+    box-shadow: -1px 5px 15px 2px rgb(44, 44, 44);
+}
+}
+
+@keyframes second {
+0% {
+    transform: rotate(180deg);
+    background-color: var(--bgcolor);
+}
+
+100% {
+    transform: rotate(360deg);
+    background-color: var(--blue);
+    box-shadow: -1px 5px 15px 2px  rgb(29, 29, 29);
+}
+}
+
+@keyframes third {
+0% {
+    transform: rotate(-180deg);
+    background-color: var(--bgcolor);
+}
+
+100% {
+    transform: rotate(-360deg);
+    background-color: var(--green);
+    box-shadow: -1px 5px 15px 2px rgb(32, 32, 32);
+}
+}
+
+
+@keyframes fourth {
+0% {
+    transform: rotate(180deg);
+    background-color: var(--bgcolor);
+}
+
+100% {
+    transform: rotate(360deg);
+    background-color:var(--newpink);
+    box-shadow: -1px 5px 15px 2px rgb(32, 32, 32);
+}
+}
+
+@keyframes fifth {
+0% {
+    transform: rotate(-180deg);
+    background-color: var(--bgcolor);
+}
+
+100% {
+    transform: rotate(-360deg);
+    background-color:var(--purple);
+    box-shadow: -1px 5px 15px 2px rgb(32, 32, 32);
+}
+}
+
+/*------------------------------------------------------------------------------
+                                 BANNER THE PARTY ANIMATION
+-------------------------------------------------------------------------------*/
+
+
+@keyframes banner {
+    0% {
+       color: var(--bgcolor);
+    }
+    25% {
+           color: var(--blue);
+    }
+    50% {
+       color: var(--purple);
+    }      
+    
+    75% {
+       color: var(--yellow);
+    }
+    100% {
+       color: var(--pink);
+    }
+    }
